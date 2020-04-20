@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>final page</title>
+    <!--    add jquery-->
+    <script src="jquery/jquery.js"></script>
+    <!--    add bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <!--    add local bootstrap-->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-reboot.css">
+    <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js" type="text/javascript"></script>
+    <!--    add icons for css-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!--    add css file-->
+    <link href="css/page1.css" type="text/css" rel="stylesheet">
+    <!--    get width -->
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<!--navbar for pc-->
+<div class="row container-fluid" id="navbar_for_pc">
+    <div class="col-6">
+        <div class="d-flex flex-row justify-content-start" style="padding: 5px;">
+            <button type="button" class="btn btn-info btn-sm navbar_button">ثبت نام</button>
+            <button type="button" class="btn btn-info btn-sm navbar_button">ورود</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="d-flex flex-row justify-content-end">
+            <span class="navbar_icon" id="about_button">درباره ما</span>
+            <span class="navbar_icon" id="know_button">آشنایی با ما</span>
+            <span class="navbar_icon" id="services_button">خدمات ما</span>
+            <span class="navbar_icon" id="connect_us">ارتباط با ما</span>
+        </div>
+    </div>
+</div>
+<!--navbar for mobile-->
+<div class="row container-fluid" id="navbar_for_mobile">
+    <div class="col-6">
+        <div class="d-flex flex-row justify-content-start" style="padding: 5px;">
+            <button type="button" class="btn btn-info btn-sm navbar_button">ثبت نام</button>
+            <button type="button" class="btn btn-info btn-sm navbar_button">ورود</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="d-flex flex-row justify-content-end">
+            <i class="fas fa-bars" id="open_menu" style="font-size: 20px"></i>
+        </div>
+    </div>
+</div>
+<!--menu of mobile navbar-->
+<div class="row container-fluid" id="menu_page" style="margin: 0">
+    <div class="col-6"></div>
+    <div class="col-6" id="menu">
+        <div class="menu_mobile">درباره ما</div><br>
+        <div class="menu_mobile">آشنایی با ما</div><br>
+        <div class="menu_mobile">خدمات ما</div><br>
+        <div class="menu_mobile">ارتباط با ما</div><br>
+    </div>
+</div>
+<script src="js/page1.js" type="text/javascript"></script>
+</body>
+</html>
