@@ -1,3 +1,6 @@
+*{
+    text-align: right;
+}
 #navbar_for_pc{
     background-color: rgb(66, 135, 245);
     margin: 0;
@@ -20,9 +23,11 @@
     transition: 0.9s;
 
 }
+
 .navbar_button{
     margin-left: 20px;
 }
+
 @media only screen and (min-width: 992px){
     #navbar_for_pc{
         visibility: visible;
@@ -33,6 +38,7 @@
     #menu{
         visibility: hidden;
     }
+
 }
 #navbar_for_mobile{
     background-color: rgb(66, 135, 245);

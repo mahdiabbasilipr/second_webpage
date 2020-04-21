@@ -10,7 +10,11 @@ $(function () {
             $("#menu").slideUp(1000)
         }
     )
-
+    $(".close_modal").click(
+        function () {
+            $(".modal").slideDown(1000)
+        }
+    )
 })
 //
 // var slideIndex = 0;
