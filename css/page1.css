@@ -106,7 +106,7 @@ body , html{
     height: 35px;
     width: auto;
 }
-#services{
+#main_text_wrapper{
     background-color: #2f0c55;
     margin: 0;
     padding: 0;
@@ -135,4 +135,9 @@ body , html{
 .services:hover{
     transform: scale(1,1);
     transition: all 0.5s;
+}
+
+#gallery{
+    margin-top:10px;
+    transform: scale(0.99,0.99);
 }
