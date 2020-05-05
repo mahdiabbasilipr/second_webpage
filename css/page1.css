@@ -2,7 +2,7 @@
     text-align: right;
 }
 body , html{
-    height: 100%;
+    height: 910px
 }
 
 #navbar_for_pc {
@@ -13,6 +13,7 @@ body , html{
     position: fixed;
     visibility: hidden;
     z-index: 10;
+    transition: 0.5s;
 }
 
 .navbar_icon {
@@ -24,6 +25,7 @@ body , html{
     color: white;
     cursor: pointer;
     z-index: 10;
+    transition: 0.2s;
 }
 
 .navbar_icon:hover {
@@ -58,6 +60,7 @@ body , html{
     padding: 0;
     height: 41px;
     position: fixed;
+    transition: 0.5s;
     z-index: 10;
 }
 
@@ -100,6 +103,7 @@ body , html{
     padding: 0;
     text-align: center;
     height: 30px;
+
 }
 #top_wrapper_icon{
     position: relative;
@@ -121,6 +125,9 @@ body , html{
     #services{
         top: 35%;
     }
+    #main_text_wrapper{
+        top:33%;
+    }
 }
 
 .services{
@@ -141,6 +148,7 @@ body , html{
 #gallery{
     margin-top:10px;
     transform: scale(0.99,0.99);
+
 }
 .image_gallery{
     cursor: pointer;
