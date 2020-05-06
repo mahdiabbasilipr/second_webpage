@@ -118,37 +118,64 @@ $(function () {
 
 
 
-// change image of header on scroll
-// window.onscroll = function() {scrollFunction()};
-//
-// function scrollFunction() {
-//     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-//         document.getElementById("").src = "";
-//     } else {
-//         document.getElementById("").style.fontSize = "";
-//     }
-// }
 
-// change css of icon of navbar when i on that element
+
 window.onscroll = function () {
-    scrollFunctionService()
+    scrollFunctionService();
+    HideNavbarScroll();
+    scrollFunctionGallery();
+    scrollFunction()
 };
 
+
+
+
+// change image of header on scroll
+
+function scrollFunction() {
+    if (document.documentElement.scrollTop > 1200) {
+        document.getElementById(".").src = "";
+    } else {
+        document.getElementById("").style.fontSize = "";
+    }
+}
+
+
+// change css of icon of navbar when i on that element
 function scrollFunctionService() {
-    if (document.documentElement.scrollTop > 400 && document.documentElement.scrollTop < 550) {
+    if (document.documentElement.scrollTop > 500 && document.documentElement.scrollTop < 1100) {
         document.getElementById("services_button").style.backgroundColor = "rgb(179, 242, 241)";
     } else {
         document.getElementById("services_button").style.backgroundColor = "#2f0c55";
     }
 }
+function scrollFunctionGallery() {
+    if (document.documentElement.scrollTop > 1550 && document.documentElement.scrollTop < 1900) {
+        document.getElementById("gallery_button").style.backgroundColor = "rgb(179, 242, 241)";
+    } else {
+        document.getElementById("gallery_button").style.backgroundColor = "#2f0c55";
+    }
+}
+// function scrollFunctionService() {
+//     if (document.documentElement.scrollTop > 500 && document.documentElement.scrollTop < 1100) {
+//         document.getElementById("services_button").style.backgroundColor = "rgb(179, 242, 241)";
+//     } else {
+//         document.getElementById("services_button").style.backgroundColor = "#2f0c55";
+//     }
+// }
+// function scrollFunctionService() {
+//     if (document.documentElement.scrollTop > 500 && document.documentElement.scrollTop < 1100) {
+//         document.getElementById("services_button").style.backgroundColor = "rgb(179, 242, 241)";
+//     } else {
+//         document.getElementById("services_button").style.backgroundColor = "#2f0c55";
+//     }
+// }
 
 
 
 // hide navbar on scroll down
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    HideNavbarScroll()
-}
+
 
 function HideNavbarScroll() {
     var currentScrollPos = window.pageYOffset;

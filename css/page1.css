@@ -146,8 +146,12 @@ body , html{
 }
 
 #gallery{
-    margin-top:10px;
+    margin:10px 0 0 0;
     transform: scale(0.99,0.99);
+    background-color: #2f0c55;
+    position: relative;
+    top: 1000px;
+    padding-top: 90px;
 
 }
 .image_gallery{
@@ -222,4 +226,18 @@ body , html{
     .modal_content {
         width: 100%;
     }
+}
+#about{
+    /*position: relative;*/
+    /*top: 500px;*/
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-bottom: 90px;
+}
+#about_j{
+    color: #fcc208;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-bottom: 90px;
 }
