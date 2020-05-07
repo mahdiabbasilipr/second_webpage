@@ -191,12 +191,17 @@ function HideNavbarScroll() {
     prevScrollpos = currentScrollPos;
 }
 
-// slideshow js
-$(function () {
-    $('.owl-carousel').owlCarousel(
-        {
 
-            
-        }
-    )
-})
+// owl do'nt work for me
+// // slideshow js
+// $(function () {
+//     $('.owl-carousel').owlCarousel(
+//         {
+//
+//
+//         }
+//     )
+// })
+
+
+
