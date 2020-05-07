@@ -133,10 +133,10 @@ window.onscroll = function () {
 // change image of header on scroll
 
 function scrollFunction() {
-    if (document.documentElement.scrollTop > 1200) {
-        document.getElementById(".").src = "";
-    } else {
-        document.getElementById("").style.fontSize = "";
+    if (document.documentElement.scrollTop > 750) {
+        document.getElementById("image_header").src = "image/36231833334_e6843c90f0_h.jpg";
+    } else if (document.documentElement.scrollTop < 750){
+        document.getElementById("image_header").src = "image/robot1.jpg";
     }
 }
 
@@ -179,15 +179,24 @@ var prevScrollpos = window.pageYOffset;
 
 function HideNavbarScroll() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar_for_pc").style.top = "0";
-        document.getElementById("navbar_for_mobile").style.top = "0";
-    } else {
-        document.getElementById("navbar_for_pc").style.top = "-50px";
-        document.getElementById("navbar_for_mobile").style.top = "-50px";
+    if (document.documentElement.scrollTop > 500) {
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar_for_pc").style.top = "0";
+            document.getElementById("navbar_for_mobile").style.top = "0";
+        } else {
+            document.getElementById("navbar_for_pc").style.top = "-50px";
+            document.getElementById("navbar_for_mobile").style.top = "-50px";
+        }
     }
     prevScrollpos = currentScrollPos;
 }
 
+// slideshow js
+$(function () {
+    $('.owl-carousel').owlCarousel(
+        {
 
-
+            
+        }
+    )
+})
