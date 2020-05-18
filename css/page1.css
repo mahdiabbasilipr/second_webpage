@@ -1,7 +1,8 @@
 * {
     text-align: right;
 }
-body , html{
+
+body, html {
     height: 910px
 }
 
@@ -95,8 +96,9 @@ body , html{
     transform: scale(1.1, 1.1);
 
 }
-#top_wrapper{
-    background-color: rgba(252, 195, 8,0.7);
+
+#top_wrapper {
+    background-color: rgba(252, 195, 8, 0.7);
     position: relative;
     top: 75%;
     margin: 0;
@@ -105,60 +107,67 @@ body , html{
     height: 30px;
 
 }
-#top_wrapper_icon{
+
+#top_wrapper_icon {
     position: relative;
     left: 40%;
     height: 35px;
     width: auto;
 }
-#main_text_wrapper{
+
+#main_text_wrapper {
     background-color: #2f0c55;
     margin: 0;
     padding: 0;
     position: relative;
     top: 74%;
 }
+
 @media only screen and (max-width: 685px) {
-    #top_wrapper{
+    #top_wrapper {
         top: 35%;
     }
-    #services{
+
+    #services {
         top: 35%;
     }
-    #main_text_wrapper{
-        top:33%;
+
+    #main_text_wrapper {
+        top: 33%;
     }
 }
 
-.services{
+.services {
     background-color: #fcc208;
     text-align: center;
     align-items: center;
     border-radius: 20px;
     margin: 0;
     padding: 10px;
-    transform: scale(0.9,0.9);
+    transform: scale(0.9, 0.9);
 }
 
-.services:hover{
-    transform: scale(1,1);
+.services:hover {
+    transform: scale(1, 1);
     transition: all 0.5s;
 }
 
-#gallery{
-    margin:10px 0 0 0;
-    transform: scale(0.99,0.99);
+#gallery {
+    margin: 10px 0 0 0;
+    transform: scale(0.99, 0.99);
     background-color: #2f0c55;
     position: relative;
     top: 1000px;
     padding-top: 90px;
 
 }
-.image_gallery{
+
+.image_gallery {
     cursor: pointer;
     transition: 0.3s;
 }
-.my_modal{
+
+.my_modal {
     display: none;
     position: fixed;
     z-index: 110;
@@ -168,44 +177,53 @@ body , html{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
-.modal_content{
+
+.modal_content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
 }
-#caption1{
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding:10px 0;
-    height: 150px;
-}
-#caption1 , #caption2 ,#caption3 ,#caption3 {
+
+#caption1 {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
     text-align: center;
     color: #ccc;
-    padding:10px 0;
+    padding: 10px 0;
     height: 150px;
 }
 
-.modal_content , #caption1,#caption2 ,#caption3 ,#caption3{
-    animation-name: zoom ;
+#caption1, #caption2, #caption3, #caption3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal_content, #caption1, #caption2, #caption3, #caption3 {
+    animation-name: zoom;
     animation-duration: 0.6s;
 }
+
 @keyframes zoom {
-    from{transform: scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
 }
-.close0 ,.close1,.close2,.close3{
+
+.close0, .close1, .close2, .close3 {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -214,20 +232,22 @@ body , html{
     font-weight: bold;
     transition: 0.3s;
 }
-.close0:hover,.close1:hover,.close2:hover,.close3:hover,
-.close0:focus,.close1:focus,.close2:focus,.close3:focus {
+
+.close0:hover, .close1:hover, .close2:hover, .close3:hover,
+.close0:focus, .close1:focus, .close2:focus, .close3:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .modal_content {
         width: 100%;
     }
 }
-#about{
+
+#about {
     /*position: relative;*/
     /*top: 500px;*/
     color: white;
@@ -235,9 +255,34 @@ body , html{
     margin-bottom: 90px;
     padding-bottom: 90px;
 }
-#about_j{
+
+#about_j {
     color: #fcc208;
     margin-top: 90px;
     margin-bottom: 90px;
     padding-bottom: 90px;
 }
+
+/*for slideshow*/
+.owl-prev {
+    left: -30px;
+}
+
+.owl-next {
+    right: -30px;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 30%;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 6px;
+    color: #787878;
+}
+
+.owl-theme .owl-nav [class="owl-"]:hover {
+    background-color: transparent;
+}
+
