@@ -120,17 +120,26 @@ window.onscroll = function () {
     scrollFunctionService();
     HideNavbarScroll();
     scrollFunctionGallery();
-    scrollFunction()
+    scrollFunction1()
+    scrollFunction2()
 };
 
 
 // change image of header on scroll
 
-function scrollFunction() {
-    if (document.documentElement.scrollTop > 750) {
+function scrollFunction1() {
+    if (document.documentElement.scrollTop > 650) {
         document.getElementById("image_header").src = "image/36231833334_e6843c90f0_h.jpg";
-    } else if (document.documentElement.scrollTop < 750) {
+    } else if (document.documentElement.scrollTop < 650) {
         document.getElementById("image_header").src = "image/robot1.jpg";
+    }
+}
+
+function scrollFunction2() {
+    if (document.documentElement.scrollTop > 2300) {
+        document.getElementById("image_header").src = "image/WhatsApp%20Image%202019-01-05%20at%2023.42.26.jpeg";
+    } else if (document.documentElement.scrollTop < 2300 && document.documentElement.scrollTop > 650) {
+        document.getElementById("image_header").src = "image/36231833334_e6843c90f0_h.jpg";
     }
 }
 
@@ -145,7 +154,7 @@ function scrollFunctionService() {
 }
 
 function scrollFunctionGallery() {
-    if (document.documentElement.scrollTop > 1550 && document.documentElement.scrollTop < 1900) {
+    if (document.documentElement.scrollTop > 1550 && document.documentElement.scrollTop < 2900) {
         document.getElementById("gallery_button").style.backgroundColor = "rgb(179, 242, 241)";
     } else {
         document.getElementById("gallery_button").style.backgroundColor = "#2f0c55";
@@ -190,14 +199,14 @@ function HideNavbarScroll() {
 // // slideshow js
 
 $('.owl-carousel').owlCarousel({
-    autoplay:true,
+    autoplay: true,
     autoplayHoverPause: true,
 
-    loop:true,
+    loop: true,
     nav: true,
 
-    item:1,
-    navText: ['<','>'],
+    item: 1,
+    navText: ['<', '>'],
 
 });
 
