@@ -5,7 +5,10 @@
 body, html {
     height: 910px
 }
-
+body, table {
+    font-family: 'Segoe UI', Tahoma;
+    font-size: 14px;
+}
 #navbar_for_pc {
     background-color: #2f0c55;
     margin: 0;
