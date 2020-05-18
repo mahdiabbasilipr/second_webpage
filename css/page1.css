@@ -154,7 +154,6 @@ body, html {
 
 #gallery {
     margin: 10px 0 0 0;
-    transform: scale(0.99, 0.99);
     background-color: #2f0c55;
     position: relative;
     top: 1000px;
@@ -286,3 +285,16 @@ body, html {
     background-color: transparent;
 }
 
+#calc_video{
+    margin: 10px 0 0 0;
+    background-color: #2f0c55;
+    position: relative;
+    top: 1500px;
+    padding-top: 90px;
+    height: 900px;
+
+}
+#calc{
+    position: relative;
+    top: 100px;
+}
